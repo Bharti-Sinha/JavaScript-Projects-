@@ -1,2 +1,1 @@
-# JavaScript-Projects-
-All things js
+# JavaScript-Projects
