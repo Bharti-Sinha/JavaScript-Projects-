@@ -6,7 +6,6 @@ let secretNumber = Math.trunc(Math.random()*20) +1;
 
 let score = 20;
 
-// select the element where the event will happen
 document.querySelector(".check").addEventListener('click', function(){
     const guess = Number(document.querySelector(".guess").value);
     // console.log(guess);
@@ -18,11 +17,10 @@ document.querySelector(".check").addEventListener('click', function(){
         document.querySelector(".message").textContent =" Currect number "; 
 
         document.querySelector(".number").textContent = secretNumber;
-        // this will be hidden behind ?
 
         document.querySelector("body").style.backgroundColor = "#60b347";
 
-        document.querySelector(".number").style.width = "30rem";// manipulating style only with string
+        document.querySelector(".number").style.width = "30rem";
 
     // when the guess is higher
     } else if (guess > secretNumber) {
